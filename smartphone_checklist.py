@@ -16,7 +16,7 @@ str=input("请输入make文件完整地址:\n")
 #str='D:\PROJECT\DL190\make\DL190_AX1811_SYM_GSM.mak'
 f = open('checklist.txt', 'w')
 #makefile=open(r"D:\PROJECT\11BW1308MP_SAGETEL60A_6464_11B_V40_GPRS_MMI_INT\make\UL280_T472_ET_GPRS.mak" )
-makefile=open(str,'r',encoding='gbk')
+makefile=open(str,'r',encoding='utf8')
 j=0
 line=makefile.readline()#一行行读入
 while line !='' and line !=None:#循环读入并检索输出
