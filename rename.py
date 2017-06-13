@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+#coding:utf-8
+#
+#   根据MTK tsf的要求，修改相关文件名
+#
+#   
+
 import os
 import time
 import glob

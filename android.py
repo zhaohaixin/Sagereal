@@ -1,5 +1,8 @@
 #!/usr/bin/python  
 #coding=utf-8  
+#
+#   此脚本当初为了方便复现camera绿屏问题。
+#
 import os  
 from time import sleep  
 def camera():
