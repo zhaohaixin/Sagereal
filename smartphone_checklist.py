@@ -6,7 +6,7 @@ MAKE=['CUSTOM_MODEM','#define USING_CLASS','MTK_FM_CHIP','MTK_BT_SUPPORT','MTK_D
 'MTK_NFC_SUPPORT','MTK_ATV_CHIP','MTK_FM_SHORT_ANTENNA_SUPPORT','GEMINI','MTK_SHARED_SDCARD','MTK_DUAL_MIC_SUPPORT',\
 'CONFIG_CUSTOM_KERNEL_LCM','CUSTOM_KERNEL_MAIN_LENS','CUSTOM_KERNEL_IMGSENSOR','CUSTOM_KERNEL_SUB_LENS',\
 'CUSTOM_KERNEL_SUB_IMGSENSOR','sagereal_battery_capacity']
-
+#后续如果想多增加宏可以在MAKE数组的末尾添加，同时也要在CHR的末尾添加描述，顺序必须一致！！
 CHR=['频段/射频PA','内部PA型号','FM','BT','WIFI','GPS','NFC','ATV','FM share','SIM 卡(单卡/双卡）','T 卡','MIC(single/Dual)',\
 'LCD 模组','后camera镜头','后camera IC','前camera镜头','前camera IC','电池参数']
 
