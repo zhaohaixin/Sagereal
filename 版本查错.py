@@ -5,13 +5,14 @@ import zipfile
 NAME=input('项目名：')
 NUM=int(input('创建版本数：'))
 PATH=input('存放文件地址:')
+COMMIT=[]
 while NUM>0:
     COMMIT.append(input('请输入commit号：'))
     NUM=NUM-1
 for commit in COMMIT:
-    os.system('git clean;git reset --hard %s' %commit)
+    os.system('git clean -df;git reset --hard %s' %commit)
     os.system('cd alps;./mk %s new' %NAME)
-    zip_dir(os.getcwd()+NAME,PATH+'%s.zip'%commit[:6])
+    zip_dir(os.getcwd()+NAME,PATH+NAME+'_%s.zip'%commit[:6])
 
 def zip_dir(dirname,zipfilename):
     filelist = []
